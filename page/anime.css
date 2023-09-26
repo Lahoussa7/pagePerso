@@ -1,0 +1,53 @@
+*{
+    padding:0%;
+    margin:0%;
+    box-sizing: border-box;    /*contien padding et margin par defaut*/
+}
+
+.circle{
+  width:20vw;
+  height:20vw;
+  border-radius: 50vh;
+  position: relative;
+  z-index: 1;
+  
+
+}
+.color{
+    border:0.5vw solid rgba(255, 0, 0, 0.473);
+    animation:anim 5s ease-in-out infinite;
+}
+.color3{
+    background-color: #0FEC8D;
+    animation:anim 5s ease-in-out infinite;
+}
+@keyframes anim {
+    0%{
+        /* transform: translate(10vw , 0vw);*/
+         transform: scale(1); 
+       /* transform: skew(1deg);*/
+    }
+    50%{
+        /* transform: translate(-20vw , 0vw);*/
+        transform: scale(0.8); 
+       /* transform: skew(30deg);*/
+    }
+    100%{
+        /* transform: translate(0vw , 0vw);*/
+        transform: scale(1); 
+       /* transform: skew(-30deg);*/
+    }
+    
+}
+.color1{
+    border:0.5vw solid black;
+}
+.circle1{
+    width:20vw;
+    height:20vw;
+    border-radius: 50vw;
+    justify-content: center;
+    z-index: 2;
+  
+  }
+

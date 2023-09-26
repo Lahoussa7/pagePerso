@@ -1,0 +1,97 @@
+*{
+ padding:0%;
+ margin:0%;
+ box-sizing:border-box;
+
+}
+.rectangle{
+
+    padding: 10px;
+    width: 60vw;
+    height: 50vh;
+    border-radius: 30px;
+    justify-content: center;
+    box-shadow:10px 10px 10px #EDDEDC;
+    /*margin-left:50vw;
+    transform:translatex(-50%);*/
+}
+.back{
+    width:"100vw";
+    height:"100vw";
+    background-image:url("sae.jpg");
+    background-repeat:cover;
+    background-size:cover;
+    background-position:center center;
+
+}
+#enter{
+    width:13vw;
+    height:2vw;
+    border-radius:20px;
+    border: none;
+    
+}
+.sary{
+	background-color:rgb(6, 151, 187);
+	width:5vw;
+	height:2vw;
+}
+.colore{
+  color:black;
+  animation:bouge 7s ease-in-out infinite;
+  font-family:Arial;
+
+}
+
+@keyframes bouge {
+    0%{
+         transform: translate(5vw , 20vw);
+       /* transform: scale(1); */
+       /* transform: skew(1deg);*/
+    }
+   /* 25%{transform: translate(-12vw , 10vw);
+    }*/
+    50%{
+        transform: translate(5vw , 10vw);
+        /*transform: scale(2); 
+        transform: skew(30deg);*/
+    }
+    75%{
+     transform: translate(5vw , 10vw);
+    
+    }
+    100%{
+        transform: translate(0vw , 10vw);
+       /* transform: scale(1); */
+        /*transform: skew(-30deg);*/
+    }
+    
+}
+.flex-box{
+   border:10px solid yellow;
+   display:flex;
+  /* width:40px solid black;*/
+   display:flex;
+  /* height:20px;
+   flex-direction:column;*/
+   justify-content:space-evenly;
+   align-items:center;
+
+}
+.flex-item{
+   width:40px;
+   margin:2em;
+   height:40px;
+   
+   background-color:blue;
+
+}
+.flex-item-2{
+  
+   align-self:flex-start;
+
+}
+.col:hover{
+ color:blue;
+}
+
